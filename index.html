@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<script type="text/javascript" src="./Draggable.js"></script>
+<style type="text/css">
+.sample {
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  cursor: move;
+}
+#sample1 {
+  top: 0px;
+  left: 500px;
+  background-color: #ffff66;
+}
+#sample2 {
+  top: 40px;
+  left: 540px;
+  background-color: #99ff99;
+}
+#sample3 {
+  top: 80px;
+  left: 580px;
+  background-color: #663300;
+  color: white;
+}
+</style>
+</head>
+<body>
+<div id="sample1" class="sample">This is a normal banana</div>
+<div id="sample2" class="sample">This banana is not ripe</div>
+<div id="sample3" class="sample">This banana is too ripe, sort it out.</div>
+<script type="text/javascript">
+var sample1 = new Draggable("sample1");
+var sample2 = new Draggable("sample2");
+var sample3 = new Draggable("sample3");
+</script>
+</body>
+</html>
+
